@@ -92,6 +92,10 @@ nav {
     width: calc(1rem + 150px + 1rem + 2rem + 1rem) !important;
 }
 
+#mobile-menu {
+    display: none;
+}
+
 #sliding-menu {
     display: flex;
     position: fixed;
@@ -123,13 +127,13 @@ nav {
     font-size: 1.5rem;
 }
 
-#sliding-menu ul li a {
+nav ul li a {
     color: white;
     transition: color 0.2s ease-in-out;
 }
 
-#sliding-menu ul li a:hover,
-#sliding-menu ul li a:focus {
+nav ul li a:hover,
+nav ul li a:focus {
     color: #ceff00;
     transition: color 0.2s ease-in-out;
 }
