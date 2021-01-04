@@ -133,6 +133,10 @@ section {
     padding: 0.5rem 1rem;
 }
 
+section {
+    margin-top: 2rem;
+}
+
 
 /* Top section */
 
@@ -160,7 +164,8 @@ section {
 .project {
     display: grid;
     grid-template: auto / 1fr 1fr;
-    grid-template-areas: "desc skills"
+    grid-template-areas: "desc skills";
+    margin-bottom: 1.5rem;
 }
 
 .project .desc {
@@ -174,7 +179,7 @@ section {
     align-items: center;
 }
 
-.project .skills .skill {
+.project .skills img {
     height: 75px;
     width: auto;
     margin: 0 0.5rem;
@@ -185,6 +190,11 @@ section {
 
 #contact {
     grid-area: contact;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
 }
 
 
