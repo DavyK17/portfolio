@@ -8,7 +8,115 @@ html {
 }
 
 
+/* General elements */
+
+body {
+    display: grid;
+    font-family: "Roboto Condensed", sans-serif;
+    grid-template: repeat(4, auto) / auto 1fr;
+    grid-template-areas: "nav top" "nav projects" "nav contact" "footer footer";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rokkitt", serif;
+    font-weight: 600 !important;
+    margin: 0.5rem 0;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4,
+p {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.875rem;
+}
+
+h6 {
+    font-size: 0.75rem;
+}
+
+strong,
+b {
+    font-weight: 600 !important;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+
+/* Menu */
+
+nav {
+    grid-area: nav;
+    background-color: black;
+    border-right: 2px solid gray;
+}
+
+.sliding-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-start;
+    margin-top: 1rem;
+}
+
+.sliding-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 1rem;
+    width: 150px;
+}
+
+.sliding-menu ul li {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.sliding-menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+.sliding-menu ul li a:hover,
+.sliding-menu ul li a:focus {
+    color: #ceff00;
+    transition: color 0.2s ease-in-out;
+}
+
+.sliding-menu img {
+    height: 2rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+
 /* Main elements */
+
+main,
+section {
+    padding: 0.5rem 1rem;
+}
 
 .bio {
     display: flex;
@@ -17,4 +125,24 @@ html {
 .bio img {
     height: 200px;
     width: auto;
+    border: 1px solid black;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+    background-color: #ceff00;
+    border-top: 2px solid gray;
+    color: black;
+    padding: 1rem;
 }
