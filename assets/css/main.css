@@ -4,7 +4,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
@@ -15,6 +15,10 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     grid-template: repeat(4, auto) / auto 1fr;
     grid-template-areas: "nav top" "nav projects" "nav contact" "footer footer";
+}
+
+.uppercase {
+    text-transform: uppercase !important;
 }
 
 h1,
@@ -58,8 +62,20 @@ b {
     font-weight: 600 !important;
 }
 
-.uppercase {
-    text-transform: uppercase !important;
+p {
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: darkgray;
+    transition: color 0.15s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #ceff00;
+    transition: color 0.15s ease-in-out;
 }
 
 
@@ -93,7 +109,6 @@ nav {
 }
 
 .sliding-menu ul li a {
-    text-decoration: none;
     color: white;
     transition: color 0.2s ease-in-out;
 }
@@ -118,19 +133,55 @@ section {
     padding: 0.5rem 1rem;
 }
 
+
+/* Top section */
+
 .bio {
     display: flex;
 }
 
 .bio img {
-    height: 200px;
+    height: 250px;
     width: auto;
     border: 1px solid black;
 }
 
+.bio .brief {
+    padding: 0 1rem;
+}
+
+
+/* Projects */
+
 #projects {
     grid-area: projects;
 }
+
+.project {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    grid-template-areas: "desc skills"
+}
+
+.project .desc {
+    grid-area: desc;
+}
+
+.project .skills {
+    grid-area: skills;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .skills .skill {
+    height: 75px;
+    width: auto;
+    margin: 0 0.5rem;
+}
+
+
+/* Contact */
 
 #contact {
     grid-area: contact;
@@ -144,5 +195,5 @@ footer {
     background-color: #ceff00;
     border-top: 2px solid gray;
     color: black;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
