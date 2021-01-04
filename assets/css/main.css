@@ -133,10 +133,6 @@ section {
     padding: 0.5rem 1rem;
 }
 
-section {
-    margin-top: 2rem;
-}
-
 
 /* Top section */
 
@@ -195,6 +191,12 @@ section {
 .contact-icons {
     display: flex;
     align-items: center;
+}
+
+.contact-icons img {
+    height: 50px;
+    width: auto;
+    margin: 0 0.5rem;
 }
 
 
