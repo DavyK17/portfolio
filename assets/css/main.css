@@ -142,6 +142,13 @@ nav ul li a:focus {
     height: 2rem;
     width: auto;
     margin-right: 1rem;
+    transition: opacity 0.15s ease-in-out;
+}
+
+#sliding-menu img:hover,
+#sliding-menu img:focus {
+    opacity: 0.8;
+    transition: opacity 0.15s ease-in-out;
 }
 
 
@@ -222,6 +229,13 @@ section {
     height: 50px;
     width: auto;
     margin: 0 0.5rem;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.contact-icons img:hover,
+.contact-icons img:focus {
+    opacity: 0.75;
+    transition: opacity 0.15s ease-in-out;
 }
 
 
