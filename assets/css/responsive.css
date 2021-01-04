@@ -8,7 +8,9 @@
     }
     /* Menu */
     nav {
+        position: fixed;
         width: 100%;
+        height: 75px;
         border-right: none;
         border-bottom: 2px solid gray;
     }
@@ -34,6 +36,9 @@
         justify-content: center;
     }
     /* Top section */
+    #mobile-filler {
+        display: block;
+    }
     .bio {
         flex-direction: column;
         align-items: center;

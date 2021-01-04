@@ -155,6 +155,11 @@ section {
 
 /* Top section */
 
+#mobile-filler {
+    display: none;
+    height: 75px;
+}
+
 .bio {
     display: flex;
 }
