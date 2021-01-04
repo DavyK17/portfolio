@@ -6,6 +6,9 @@
     h1 {
         text-align: center;
     }
+    .mobile-filler {
+        display: block;
+    }
     /* Menu */
     nav {
         display: flex;
@@ -39,9 +42,6 @@
         justify-content: center;
     }
     /* Top section */
-    #mobile-filler {
-        display: block;
-    }
     .bio {
         flex-direction: column;
         align-items: center;
