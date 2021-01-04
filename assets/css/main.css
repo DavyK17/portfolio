@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+/* Main elements */
+
+.bio {
+    display: flex;
+}
+
+.bio img {
+    height: 200px;
+    width: auto;
+}
