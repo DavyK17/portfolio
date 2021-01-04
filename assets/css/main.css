@@ -142,13 +142,6 @@ nav ul li a:focus {
     height: 2rem;
     width: auto;
     margin-right: 1rem;
-    transition: opacity 0.15s ease-in-out;
-}
-
-#sliding-menu img:hover,
-#sliding-menu img:focus {
-    opacity: 0.8;
-    transition: opacity 0.15s ease-in-out;
 }
 
 
