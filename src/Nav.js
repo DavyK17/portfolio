@@ -14,28 +14,28 @@ function Nav() {
             <div id="sliding-menu">
                 <img src={Icons.menu} onClick={toggleMenu} alt={"Menu icon"} />
                 <ul>
-                    <Link to="/">
-                        <li>Home</li>
-                    </Link>
-                    <Link to="/projects">
-                        <li>Projects</li>
-                    </Link>
-                    <Link to="/contact">
-                        <li>Contact</li>
-                    </Link>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/projects">Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact</Link>
+                    </li>
                 </ul>
             </div>
             <div id="mobile-menu">
                 <ul>
-                    <Link to="/">
-                        <li>Home</li>
-                    </Link>
-                    <Link to="/projects">
-                        <li>Projects</li>
-                    </Link>
-                    <Link to="/contact">
-                        <li>Contact</li>
-                    </Link>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/projects">Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
