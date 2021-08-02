@@ -3,6 +3,7 @@ import introImg from "../assets/img/102.jpg";
 function Intro() {
     return (
         <div id="intro">
+            <div className="mobile-filler"></div>
             <h1 className="uppercase">Davy Kamanzi</h1>
             <div className="bio">
                 <img src={introImg} alt={"Davy Kamanzi"} />

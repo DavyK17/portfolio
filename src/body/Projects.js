@@ -83,7 +83,8 @@ function Projects() {
     ]
 
     return (
-        <div id="projects">    
+        <div id="projects">
+                <div className="mobile-filler"></div>
                 <h2 className="uppercase">Projects</h2>
                 {projectList.map((p, i) => project(p.title, p.desc, p.url, p.linkLabel, p.skills))}
         </div>
