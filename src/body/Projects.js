@@ -53,7 +53,7 @@ function Projects() {
                 </div>
             ),
             url: "https://arkadworld.com/",
-            skills: ["html", "css", "js", "jquery", "greensock"],
+            skills: ["jquery", "greensock"],
         },
         {
             title: "TEKKEN 254",
@@ -65,7 +65,7 @@ function Projects() {
                 </div>
             ),
             url: "https://tekken254.co.ke/",
-            skills: ["html", "css", "js", "bootstrap", "jquery", "jekyll"],
+            skills: ["bootstrap", "jquery", "jekyll"],
         },
         {
             title: "Jammming",
@@ -78,7 +78,7 @@ function Projects() {
                 </div>
             ),
             url: "https://dvk-jammming.netlify.app/",
-            skills: ["css", "js", "react"],
+            skills: ["react"],
         },
     ]
 
