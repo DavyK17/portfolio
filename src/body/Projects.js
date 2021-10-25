@@ -2,20 +2,20 @@ import Dev from "../assets/img/dev/Dev";
 
 function Projects() {
     const project = (title, desc, url, linkLabel, skills) => {
-        console.log(Array.isArray(skills));
-
-        return (      
-            <div className="project">
-                <div className="desc">
-                    <h3>{title}</h3>
-                    {desc}
-                    <a href={url} target="_blank" rel="noreferrer">{linkLabel || "Visit website"}</a>
+        if(Array.isArray(skills)) {
+            return (      
+                <div className="project">
+                    <div className="desc">
+                        <h3>{title}</h3>
+                        {desc}
+                        <a href={url} target="_blank" rel="noreferrer">{linkLabel || "Visit website"}</a>
+                    </div>
+                    <div className="skills">
+                        {skills.map((s, i) => <img key={i} src={devList[s].src} alt={devList[s].name} title={devList[s].name} />)}
+                    </div>
                 </div>
-                <div className="skills">
-                    {skills.map((s, i) => <img key={i} src={devList[s].src} alt={devList[s].name} title={devList[s].name} />)}
-                </div>
-            </div>
-        )
+            )
+        }
     }
 
     const devList = {
