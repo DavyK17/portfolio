@@ -26,6 +26,7 @@ function Projects() {
         js: { name: "JavaScript", src: Dev.js },
         jekyll: { name: "Jekyll", src: Dev.jekyll },
         jquery: { name: "jQuery", src: Dev.jquery },
+        netlifyCMS: { name: "Netlify CMS", src: Dev.netlifyCMS },
         node: { name: "Node.js", src: Dev.node },
         react: { name: "React", src: Dev.react },
     }
@@ -59,13 +60,12 @@ function Projects() {
             title: "TEKKEN 254",
             desc: (
                 <div>
-                    <p>TEKKEN 254 is a venture seeking to grow the Tekken community and establish a competitive Tekken scene in Kenya. Following feedback from users, I took on a project to take the existing website off Wix and rebuild it with HTML, CSS and JavaScript
-                        on the front end to make it more lightweight and responsive. The website makes use of Bootstrap and jQuery, and is generated using Jekyll.</p>
+                    <p>TEKKEN 254 is a venture seeking to grow the Tekken community and establish a competitive Tekken scene in Kenya. Following feedback from users, I took on a project to take the existing website off Wix and rebuild it with Bootstrap and jQuery on the front end to make it more lightweight and responsive. The website is generated using Jekyll, with Netlify CMS integrated as a content management system.</p>
                     <p>The project is still ongoing as some content is yet to be migrated, and back-end development yet to be completed.</p>
                 </div>
             ),
             url: "https://tekken254.co.ke/",
-            skills: ["bootstrap", "jquery", "jekyll"],
+            skills: ["bootstrap", "jquery", "jekyll", "netlifyCMS"],
         },
         {
             title: "Jammming",
@@ -79,6 +79,17 @@ function Projects() {
             ),
             url: "https://dvk-jammming.netlify.app/",
             skills: ["react"],
+        },
+        {
+            title: "OurRagingPlanet",
+            desc: (
+                <div>
+                    <p>OurRagingPlanet is a web-based human impact education tool that allows students to view basic simulations of disasters in their area, using public data to estimate the impact on familiar local landmarks.</p>
+                    <p>I was tasked with coming up with a new, simple, business-centred design for their website, while also integrating a blog for providing news and updates, as well as a language selector and an Arabic-language version of the site (with right-to-left adjustments made).</p>
+                </div>
+            ),
+            url: "https://orp-draft-fat.netlify.app/",
+            skills: ["bootstrap", "jquery", "jekyll", "netlifyCMS"],
         },
     ]
 
