@@ -215,6 +215,12 @@ main {
     margin: 0 0.5rem;
 }
 
+.project .project-links .bullet::before {
+    content: "\2022";
+    margin: 0 0.25rem;
+    opacity: 0.75;
+}
+
 
 /* Contact */
 
