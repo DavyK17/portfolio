@@ -8,9 +8,10 @@ import jquery from "./jquery-1.svg";
 import netlifyCMS from "./netlify-cms.svg";
 import node from "./nodejs-1.svg";
 import react from "./react.svg";
+import redux from "./redux.svg";
 
 const Dev = {
-    bootstrap, css, greensock, html, js, jekyll, jquery, netlifyCMS, node, react
+    bootstrap, css, greensock, html, js, jekyll, jquery, netlifyCMS, node, react, redux
 }
 
 export default Dev;
