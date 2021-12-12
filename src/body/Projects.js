@@ -1,14 +1,30 @@
 import Dev from "../assets/img/dev/Dev";
 
 function Projects() {
-    const project = (title, desc, url, linkLabel, skills) => {
+    const project = (title, desc, url, linkLabel, url2 = null, linkLabel2 = null, skills) => {
+        const renderLinks = () => {
+            if (url2) {
+                return (
+                    <div className="project-links">
+                        <a href={url} target="_blank" rel="noreferrer">{linkLabel || "Visit website"}</a>
+                        <span className="bullet"></span>
+                        <a href={url2} target="_blank" rel="noreferrer">{linkLabel2 || "Visit repository"}</a>
+                    </div>
+                )
+            }
+            
+            return (
+                <a href={url} target="_blank" rel="noreferrer">{linkLabel || "Visit website"}</a>
+            )
+        }
+
         if(Array.isArray(skills)) {
             return (      
                 <div className="project">
                     <div className="desc">
                         <h3>{title}</h3>
                         {desc}
-                        <a href={url} target="_blank" rel="noreferrer">{linkLabel || "Visit website"}</a>
+                        {renderLinks()}
                     </div>
                     <div className="skills">
                         {skills.map((s, i) => <img key={i} src={devList[s].src} alt={devList[s].name} title={devList[s].name} />)}
@@ -97,7 +113,7 @@ function Projects() {
         <div id="projects">
                 <div className="mobile-filler"></div>
                 <h2 className="uppercase">Projects</h2>
-                {projectList.map((p, i) => project(p.title, p.desc, p.url, p.linkLabel, p.skills))}
+                {projectList.map((p, i) => project(p.title, p.desc, p.url, p.linkLabel, p.url2, p.linkLabel2, p.skills))}
         </div>
     )
 }
