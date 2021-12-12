@@ -1,4 +1,4 @@
-import Dev from "../assets/img/dev/Dev";
+import { devList } from "../assets/img/dev/Dev";
 
 function Projects() {
     const project = (title, desc, url, linkLabel, url2 = null, linkLabel2 = null, skills) => {
@@ -32,19 +32,6 @@ function Projects() {
                 </div>
             )
         }
-    }
-
-    const devList = {
-        bootstrap: { name: "Bootstrap", src: Dev.bootstrap },
-        css: { name: "CSS", src: Dev.css },
-        greensock: { name: "GreenSock", src: Dev.greensock },
-        html: { name: "HTML5", src: Dev.html },
-        js: { name: "JavaScript", src: Dev.js },
-        jekyll: { name: "Jekyll", src: Dev.jekyll },
-        jquery: { name: "jQuery", src: Dev.jquery },
-        netlifyCMS: { name: "Netlify CMS", src: Dev.netlifyCMS },
-        node: { name: "Node.js", src: Dev.node },
-        react: { name: "React", src: Dev.react },
     }
 
     const projectList = [
