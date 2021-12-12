@@ -81,6 +81,7 @@ function Projects() {
                 </div>
             ),
             url: "https://dvk-jammming.netlify.app/",
+            url2: "https://github.com/DavyK17/jammming",
             skills: ["react"],
         },
         {
