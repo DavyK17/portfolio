@@ -14,7 +14,7 @@ function Intro() {
                         technologies such as React as well as the back end to transition into a full-stack developer.
                     </p>
                     <p><strong>Languages:</strong> HTML, CSS, JavaScript, Liquid, PHP</p>
-                    <p><strong>Libraries/Systems:</strong> Bootstrap, GreenSock, Jekyll, jQuery, Node.js, React, Wordpress</p>
+                    <p><strong>Libraries/Systems:</strong> Bootstrap, GreenSock, Jekyll, jQuery, Node.js, React, Redux, Wordpress</p>
                 </div>
             </div>
         </div>
