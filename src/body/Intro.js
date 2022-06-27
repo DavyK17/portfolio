@@ -13,7 +13,7 @@ function Intro() {
                         command of the English language and speak English at a native level, so you can be sure there will be no errors in spelling, grammar or terminology with the content of the site either. Currently extending my knowledge to the back-end as I transition into a full-stack developer.
                     </p>
                     <p><strong>Languages:</strong> HTML, CSS, JavaScript, Liquid, SQL</p>
-                    <p><strong>Libraries/Systems:</strong> Bootstrap, GreenSock, Jekyll, jQuery, Node.js, PostgreSQL, React, Redux</p>
+                    <p><strong>Libraries/Systems:</strong> Bootstrap, GreenSock, Jekyll, jQuery, Node.js, PostgreSQL, React, Redux, Shopify</p>
                 </div>
             </div>
         </div>
