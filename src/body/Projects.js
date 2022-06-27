@@ -1,26 +1,29 @@
 import { devList } from "../assets/img/dev/Dev";
 
 function Projects() {
-    const project = (title, desc, url, linkLabel, url2 = null, linkLabel2 = null, skills) => {
+    const linkLabels = ["Visit website", "View repository"];
+    const project = (key, title, desc, site = null, repo = null, skills) => {
         const renderLinks = () => {
-            if (url2) {
+            if (!site && !repo) throw new Error("Project must have a site or repo link");
+            
+            if (site && repo) {
                 return (
                     <div className="project-links">
-                        <a href={url} target="_blank" rel="noreferrer">{linkLabel || "Visit website"}</a>
+                        <a href={site} target="_blank" rel="noreferrer">{linkLabels[0]}</a>
                         <span className="bullet"></span>
-                        <a href={url2} target="_blank" rel="noreferrer">{linkLabel2 || "Visit repository"}</a>
+                        <a href={repo} target="_blank" rel="noreferrer">{linkLabels[1]}</a>
                     </div>
                 )
             }
             
             return (
-                <a href={url} target="_blank" rel="noreferrer">{linkLabel || "Visit website"}</a>
+                <a href={site || repo} target="_blank" rel="noreferrer">{repo ? linkLabels[1] : linkLabels[0] }</a>
             )
         }
 
         if(Array.isArray(skills)) {
             return (      
-                <div className="project">
+                <div className="project" key={key}>
                     <div className="desc">
                         <h3>{title}</h3>
                         {desc}
@@ -45,8 +48,7 @@ function Projects() {
                     <p>The program can be run on any Node.js-supported command line interface (CLI).</p>
                 </div>
             ),
-            url: "https://github.com/DavyK17/mixed-messages",
-            linkLabel: "Visit repository",
+            repo: "https://github.com/DavyK17/mixed-messages",
             skills: ["js", "node"],
         },
         {
@@ -56,7 +58,7 @@ function Projects() {
                     <p>Arkad World Ltd is a Kenyan company specialising in conference interpreting, translation and conference management services. I was tasked with overhauling the company's website by removing Wordpress and building a simple, new design.</p>
                 </div>
             ),
-            url: "https://arkadworld.com/",
+            site: "https://arkadworld.com/",
             skills: ["jquery", "greensock"],
         },
         {
@@ -67,7 +69,7 @@ function Projects() {
                     <p>The project is still ongoing as some content is yet to be migrated, and back-end development yet to be completed.</p>
                 </div>
             ),
-            url: "https://tekken254.co.ke/",
+            site: "https://tekken254.co.ke/",
             skills: ["bootstrap", "jquery", "jekyll", "netlifyCMS"],
         },
         {
@@ -78,8 +80,8 @@ function Projects() {
                     <p>Aside from viewing displayed content, users are also able to view all top-level comments for each post (excluding replies), as well as filter posts by Reddit's listing options (Hot [by default], New, Top, or Rising), and upvote, downvote, or unvote on each post. Users may also use the search box to filter through the rendered posts.</p>
                 </div>
             ),
-            url: "https://fgc-reddit.netlify.app/",
-            url2: "https://github.com/DavyK17/fgc-reddit",
+            site: "https://fgc-reddit.netlify.app/",
+            repo: "https://github.com/DavyK17/fgc-reddit",
             skills: ["react", "redux"],
         },
     ]
@@ -88,7 +90,7 @@ function Projects() {
         <div id="projects">
                 <div className="mobile-filler"></div>
                 <h2 className="uppercase">Projects</h2>
-                {projectList.map((p, i) => project(p.title, p.desc, p.url, p.linkLabel, p.url2, p.linkLabel2, p.skills))}
+                {projectList.map((p, i) => project(i, p.title, p.desc, p.site, p.repo, p.skills))}
         </div>
     )
 }
