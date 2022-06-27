@@ -1,5 +1,5 @@
 import $ from "jquery";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Icons from "./assets/img/icons/Icons";
 
 function Nav() {
@@ -9,34 +9,30 @@ function Nav() {
         $("#sliding-menu").toggleClass("menu-open");
     }
 
+    const renderMenu = () => {
+        return (
+            <ul>
+                <li>
+                    <NavLink activeClassName="active" to="/" exact>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName="active" to="/projects">Projects</NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+                </li>
+            </ul>
+        )
+    }
+
     return (
         <nav>
             <div id="sliding-menu">
                 <img src={Icons.menu} onClick={toggleMenu} alt={"Menu icon"} />
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/projects">Projects</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
+                {renderMenu()}
             </div>
             <div id="mobile-menu">
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/projects">Projects</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
+                {renderMenu()}
             </div>
         </nav>
     )
