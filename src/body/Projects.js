@@ -71,31 +71,6 @@ function Projects() {
             skills: ["bootstrap", "jquery", "jekyll", "netlifyCMS"],
         },
         {
-            title: "Jammming",
-            desc: (
-                <div>
-                    <p>Jammming is a challenge project I did as part of my full stack engineer course on Codecademy. It is a React web app that connects to the user's Spotify account and allows them to search for tracks, add them to a new playlist and save the
-                    playlist to their account.</p>
-                    <p>Following the base project, I added some functionality to the web app as part of a supplementary feature request that allows the user to retrieve, select and modify existing playlists, as well as clear the current playlist being modified
-                        from state and refresh the list of existing playlists displayed.</p>
-                </div>
-            ),
-            url: "https://dvk-jammming.netlify.app/",
-            url2: "https://github.com/DavyK17/jammming",
-            skills: ["react"],
-        },
-        {
-            title: "OurRagingPlanet",
-            desc: (
-                <div>
-                    <p>OurRagingPlanet is a web-based human impact education tool that allows students to view basic simulations of disasters in their area, using public data to estimate the impact on familiar local landmarks.</p>
-                    <p>I was tasked with coming up with a new, simple, business-centred design for their website, while also integrating a blog for providing news and updates, as well as a language selector and an Arabic-language version of the site (with right-to-left adjustments made).</p>
-                </div>
-            ),
-            url: "https://orp-draft-fat.netlify.app/",
-            skills: ["bootstrap", "jquery", "jekyll", "netlifyCMS"],
-        },
-        {
             title: "FGC Reddit",
             desc: (
                 <div>
