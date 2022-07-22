@@ -59,7 +59,7 @@ function Projects() {
                 </div>
             ),
             site: "https://arkadworld.com/",
-            skills: ["jquery", "greensock"],
+            skills: ["greensock", "jquery", "jekyll", "sass"],
         },
         {
             title: "TEKKEN 254",
