@@ -21,7 +21,7 @@ const Dev = {
 export const devList = {
     bootstrap: { name: "Bootstrap", src: Dev.bootstrap },
     css: { name: "CSS", src: Dev.css },
-    express: { name: "Express.js", src: Dev.express },
+    express: { name: "Express", src: Dev.express },
     greensock: { name: "GreenSock", src: Dev.greensock },
     html: { name: "HTML5", src: Dev.html },
     js: { name: "JavaScript", src: Dev.js },
