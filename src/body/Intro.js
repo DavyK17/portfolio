@@ -4,7 +4,7 @@ import introImg from "../assets/img/102.jpg";
 function Intro() {
     const renderSystems = () => {
         let list = [];
-        Object.values(devList).filter(e => e.name !== "CSS" && e.name !== "HTML5" && e.name !== "JavaScript").forEach(e => {
+        Object.values(devList).filter(e => e.name !== "CSS" && e.name !== "HTML5" && !e.name.includes("JavaScript")).forEach(e => {
             list.push(e.name);
         });
 
