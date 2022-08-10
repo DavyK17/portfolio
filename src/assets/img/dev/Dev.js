@@ -24,7 +24,7 @@ export const devList = {
     express: { name: "Express", src: Dev.express },
     greensock: { name: "GreenSock", src: Dev.greensock },
     html: { name: "HTML5", src: Dev.html },
-    js: { name: "JavaScript", src: Dev.js },
+    js: { name: "Vanilla (Pure) JavaScript", src: Dev.js },
     jekyll: { name: "Jekyll", src: Dev.jekyll },
     jquery: { name: "jQuery", src: Dev.jquery },
     netlifyCMS: { name: "Netlify CMS", src: Dev.netlifyCMS },
