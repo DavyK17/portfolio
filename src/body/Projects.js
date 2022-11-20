@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { devList } from "../assets/img/dev/Dev";
 
 function Projects() {
@@ -39,19 +40,6 @@ function Projects() {
 
     const projectList = [
         {
-            title: "Dad joke generator (Mixed Messages)",
-            desc: (
-                <div>
-                    <p>Mixed Messages is a portfolio project I did as part of my full stack engineer course on Codecademy. My program, built with JavaScript, auto-generates a random dad joke from a list of 20 in total, and is available in a simplified version
-                        and an interactive version.
-                    </p>
-                    <p>The program can be run on any Node.js-supported command line interface (CLI).</p>
-                </div>
-            ),
-            repo: "https://github.com/DavyK17/mixed-messages",
-            skills: ["js", "node"],
-        },
-        {
             title: "Arkad World",
             desc: (
                 <div>
@@ -83,6 +71,17 @@ function Projects() {
             site: "https://fgc-reddit.netlify.app/",
             repo: "https://github.com/DavyK17/fgc-reddit",
             skills: ["react", "redux"],
+        },
+        {
+            title: "Man of Substance",
+            desc: (
+                <div>
+                    <p><em>Man of Substance</em> is my debut studio album as a musician, under my pseudonym DVK. For its website, I created a PERN app that allows users to view information about the album, including its credits as well as a synopsis, lyrics and credits for each track. Crowdfunding contributors are also able to claim their rewards on the app.</p>
+                    <p>If you'd like viewing access to the app's repositories, kindly send me an email from the <Link to="/contact">Contact page</Link>.</p>
+                </div>
+            ),
+            site: "https://mos.davykamanzi.com/",
+            skills: ["postgres", "express", "react", "node", "sass"],
         },
     ]
 
