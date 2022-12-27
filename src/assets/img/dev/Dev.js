@@ -1,3 +1,4 @@
+import aws from "./aws.svg"
 import bootstrap from "./bootstrap-4.svg";
 import css from "./css3.svg";
 import express from "./expressjs.svg";
@@ -15,10 +16,11 @@ import sass from "./sass.svg";
 import shopify from "./shopify.svg";
 
 const Dev = {
-    bootstrap, css, express, greensock, html, js, jekyll, jquery, netlifyCMS, node, postgres, react, redux, sass, shopify
+    aws, bootstrap, css, express, greensock, html, js, jekyll, jquery, netlifyCMS, node, postgres, react, redux, sass, shopify
 }
 
 export const devList = {
+    aws: { name: "Amazon Web Services", src: Dev.aws },
     bootstrap: { name: "Bootstrap", src: Dev.bootstrap },
     css: { name: "CSS", src: Dev.css },
     express: { name: "Express", src: Dev.express },
