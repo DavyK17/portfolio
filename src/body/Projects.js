@@ -81,7 +81,7 @@ function Projects() {
                 </div>
             ),
             site: "https://mos.davykamanzi.com/",
-            skills: ["postgres", "express", "react", "node", "sass"],
+            skills: ["postgres", "express", "react", "node", "sass", "aws"],
         },
     ]
 
