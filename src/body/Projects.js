@@ -87,7 +87,7 @@ function Projects() {
             title: "Kibandaski",
             desc: (
                 <div>
-                    <p>Kibandaski is a portfolio project I did as part of my full stack engineer course on Codecademy. It is an e-commerce app that allows users to buy food from a fictional local street restaurant (called a "kibanda" in Kiswahili; remixed to "kibandaski" by local youth), as well as perform functions on orders and products as an administrator.</p>
+                    <p>Kibandaski is a portfolio project I did as part of my full stack engineer course on Codecademy. It is an e-commerce app that allows users to buy food from a fictional Kenyan street restaurant, as well as perform functions on orders and products as an administrator.</p>
                     <p>Users may view products without authorisation, but all other available functionality requires authorisation.</p>
                 </div>
             ),
