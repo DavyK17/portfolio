@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import Icons from "./assets/img/icons/Icons";
 
 function Nav() {
-
     const toggleMenu = () => {
         $("nav").toggleClass("nav-open");
         $("#sliding-menu").toggleClass("menu-open");
