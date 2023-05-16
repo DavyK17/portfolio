@@ -19,9 +19,7 @@ function Intro() {
                 <img src={introImg} alt={"Davy Kamanzi"} />
                 <div className="brief">
                     <h2>Web developer</h2>
-                    <p>A professional who always strives to do his work with diligence and precision, so you can be sure there will be no errors in the code or the functionality of the website. Having done editing and proofreading work, I also have a very strong
-                        command of the English language and speak English at a native level, so you can be sure there will be no errors in spelling, grammar or terminology with the content of the site either. Currently extending my knowledge to the back-end as I transition into a full-stack developer.
-                    </p>
+                    <p>A professional that strives to do my work with diligence and precision, hence minimal errors in the code or the functionality of any given web development project. Having gained experience with HTML, CSS, JavaScript, SQL and Liquid, I am capable of developing with various front-end and back-end technologies including Jekyll, Shopify, React, Express and PostgreSQL. I also possess a strong desire to improve my skills by getting hands-on with various technologies under the guidance of more experienced developers.</p>
                     <p><strong>Languages:</strong> HTML, CSS, JavaScript, Liquid, SQL</p>
                     <p><strong>Libraries/Systems:</strong> {renderSystems()}</p>
                 </div>
