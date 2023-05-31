@@ -102,7 +102,7 @@ function Projects() {
                     <p>Kitanda Guest House is a portfolio project I did as part of my full stack engineer course on Codecademy. It is a simple booking app that allows the user to reserve a room from a fictional Kenyan guest house called Kitanda (Kiswahili for "bed"). Users may make reservations without authentication, but registering an account affords the user a better reservation tracking experience, as well as allowing them to save addresses for use in reservations.</p>
                 </div>
             ),
-            site: "https://kitanda-guest-house-production.up.railway.app/",
+            site: "https://kitanda-guest-house.up.railway.app/",
             repo: "https://github.com/DavyK17/kitanda-guest-house",
             skills: ["postgres", "express", "react", "node", "sass", "bootstrap"],
         }
