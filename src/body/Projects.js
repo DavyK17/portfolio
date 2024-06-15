@@ -61,18 +61,6 @@ function Projects() {
             skills: ["bootstrap", "jquery", "jekyll", "netlifyCMS"],
         },
         {
-            title: "FGC Reddit",
-            desc: (
-                <div>
-                    <p>FGC Reddit is a portfolio project I did as part of my full stack engineer course on Codecademy. It is a React-Redux app that allows the user to view Reddit posts from various fighting game community (FGC)-related subreddits. The app requires authentication with the user's Reddit account to be used, and does not display posts containing galleries, links, or embeds.</p>
-                    <p>Aside from viewing displayed content, users are also able to view all top-level comments for each post (excluding replies), as well as filter posts by Reddit's listing options (Hot [by default], New, Top, or Rising), and upvote, downvote, or unvote on each post. Users may also use the search box to filter through the rendered posts.</p>
-                </div>
-            ),
-            site: "https://fgc-reddit.netlify.app/",
-            repo: "https://github.com/DavyK17/fgc-reddit",
-            skills: ["react", "redux"],
-        },
-        {
             title: "Man of Substance",
             desc: (
                 <div>
@@ -82,29 +70,6 @@ function Projects() {
             ),
             site: "https://mos.davykamanzi.com/",
             skills: ["postgres", "express", "react", "node", "sass", "aws"],
-        },
-        {
-            title: "Kibandaski",
-            desc: (
-                <div>
-                    <p>Kibandaski is a portfolio project I did as part of my full stack engineer course on Codecademy. It is an e-commerce app that allows users to buy food from a fictional Kenyan street restaurant, as well as perform functions on orders and products as an administrator.</p>
-                    <p>Users may view products without authentication, but all other available functionality requires authentication.</p>
-                </div>
-            ),
-            site: "https://kibandaski.up.railway.app/",
-            repo: "https://github.com/DavyK17/kibandaski",
-            skills: ["postgres", "express", "react", "node", "sass"],
-        },
-        {
-            title: "Kitanda Guest House",
-            desc: (
-                <div>
-                    <p>Kitanda Guest House is a portfolio project I did as part of my full stack engineer course on Codecademy. It is a simple booking app that allows the user to reserve a room from a fictional Kenyan guest house called Kitanda (Kiswahili for "bed"). Users may make reservations without authentication, but registering an account affords the user a better reservation tracking experience, as well as allowing them to save addresses for use in reservations.</p>
-                </div>
-            ),
-            site: "https://kitanda-guest-house.up.railway.app/",
-            repo: "https://github.com/DavyK17/kitanda-guest-house",
-            skills: ["postgres", "express", "react", "node", "sass", "bootstrap"],
         }
     ]
 
