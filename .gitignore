@@ -26,8 +26,4 @@ Thumbs.db
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-.dev.vars
-
-# Playwright
-playwright-report
-test-results
+.dev.vars*

@@ -1,20 +1,7 @@
-import { defineConfig } from "vitest/config";
+import tailwindcss from "@tailwindcss/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-	plugins: [sveltekit()],
-	test: {
-		include: ["src/**/*.{test,spec}.{js,ts}"]
-	},
-	optimizeDeps: {
-		esbuildOptions: {
-			target: "esnext"
-		}
-	},
-	build: {
-		rollupOptions: {
-			external: ["chromium-bidi/lib/cjs/bidiMapper/BidiMapper", "chromium-bidi/lib/cjs/cdp/CdpConnection"]
-		},
-		target: "esnext"
-	}
+	plugins: [sveltekit(), tailwindcss()]
 });
