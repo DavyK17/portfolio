@@ -1,2 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
-@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-roboto: "Roboto Condensed", "sans-serif";
+	--font-rokkitt: "Rokkitt", serif;
+	--blue: #0066c8;
+	--green: #ceff00;
+}
+
+@layer base {
+	html {
+		@apply text-xl;
+	}
+
+	body {
+		@apply font-roboto max-md:grid max-md:grid-cols-[1fr] max-md:grid-rows-5;
+		grid-template-areas: "nav" "top" "projects" "contact" "footer";
+	}
+
+	#root {
+		@apply absolute top-0 right-0 bottom-0 left-0 grid;
+		grid-template: 1fr auto / auto 1fr;
+		grid-template-areas: "nav body" "footer footer";
+	}
+}
+
+@layer components {
+	/* General */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-rokkitt my-2 font-semibold;
+	}
+
+	h1 {
+		@apply text-[2.75rem] max-sm:text-center;
+	}
+
+	h2 {
+		@apply text-[2rem];
+	}
+
+	h3 {
+		@apply text-2xl;
+	}
+
+	h4,
+	p {
+		@apply text-base;
+	}
+
+	h5 {
+		@apply text-sm;
+	}
+
+	h6 {
+		@apply text-xs;
+	}
+
+	a {
+		@apply text-[#808080] no-underline transition-colors duration-200 ease-in-out hover:focus:text-(--blue);
+	}
+
+	/* Layout */
+	nav {
+		@apply fixed flex h-[75px] w-full border-solid border-gray-500 bg-black transition-all duration-200 max-md:items-center max-md:border-b-2 md:static md:block md:h-full md:w-16 md:border-r-2;
+		grid-area: nav;
+		ul li a {
+			@apply text-white transition-colors duration-200 ease-in-out hover:focus:text-(--green);
+			&.active {
+				@apply text-(--green);
+			}
+		}
+	}
+
+	.nav-open {
+		width: calc(1rem + 150px + 1rem + 2rem + 1rem) !important;
+	}
+
+	.menu-open {
+		@apply left-0!;
+	}
+
+	#mobile-menu {
+		@apply w-full md:hidden;
+		ul {
+			@apply my-4 flex w-full list-none justify-evenly p-0;
+			li {
+				@apply inline-flex content-center text-base uppercase;
+			}
+		}
+	}
+
+	#sliding-menu {
+		@apply hidden transition-all duration-200 md:fixed md:mt-4 md:flex md:w-fit md:flex-row-reverse md:content-start;
+		left: calc(-150px + -1rem);
+		a,
+		button {
+			@apply cursor-pointer;
+		}
+		ul {
+			@apply mx-4 w-[150px] list-none p-0;
+			li {
+				@apply mb-4 text-center text-2xl uppercase md:text-start;
+			}
+		}
+	}
+
+	main {
+		@apply px-4 py-2;
+		grid-area: body;
+	}
+
+	.mobile-filler {
+		@apply h-[75px] md:hidden;
+	}
+
+	footer {
+		@apply border-t-2 border-solid border-gray-500 bg-(--green) px-4 py-2 text-black;
+		grid-area: footer;
+	}
+}
