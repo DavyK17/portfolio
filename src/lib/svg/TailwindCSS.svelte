@@ -3,6 +3,7 @@
 </script>
 
 <svg viewBox="0 0 54 33" fill="none" {...props}>
+	<title>Tailwind CSS</title>
 	<defs>
 		<clipPath id="prefix__clip0">
 			<path fill="#fff" d="M0 0h54v32.4H0z" />

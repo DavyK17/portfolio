@@ -3,6 +3,7 @@
 </script>
 
 <svg viewBox="0 0 512 408" {...props}>
+	<title>Bootstrap</title>
 	<defs>
 		<linearGradient id="bs-logo-a" x1="76.079" x2="523.48" y1="10.798" y2="365.945" gradientUnits="userSpaceOnUse">
 			<stop stop-color="#9013fe" />

@@ -3,6 +3,7 @@
 </script>
 
 <svg viewBox="0 0 304 182" {...props}>
+	<title>Amazon Web Services</title>
 	<g>
 		<path
 			class="st0"

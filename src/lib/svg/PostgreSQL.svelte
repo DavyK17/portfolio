@@ -3,6 +3,7 @@
 </script>
 
 <svg viewBox="0 0 432.071 445.383" {...props}>
+	<title>PostgreSQL</title>
 	<g id="orginal" style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;"> </g>
 	<g
 		id="Layer_x0020_3"

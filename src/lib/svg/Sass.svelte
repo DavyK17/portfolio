@@ -3,6 +3,7 @@
 </script>
 
 <svg viewBox="0 0 547.8 410.6" enable-background="new 0 0 547.8 410.6" {...props}>
+	<title>Sass</title>
 	<path
 		fill="#CD6799"
 		d="M471.4,236c-19.1,0.1-35.7,4.7-49.6,11.5c-5.1-10.1-10.2-19.1-11.1-25.7c-1-7.7-2.2-12.4-1-21.6

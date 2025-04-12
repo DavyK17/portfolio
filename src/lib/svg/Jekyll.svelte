@@ -3,6 +3,7 @@
 </script>
 
 <svg viewBox="0 0 960 489" enable-background="new 0 0 960 489" {...props}>
+	<title>Jekyll</title>
 	<switch id="switch76">
 		<foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1">
 		</foreignObject>
