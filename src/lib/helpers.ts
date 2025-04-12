@@ -4,17 +4,27 @@ import AWS from "$lib/svg/AWS.svelte";
 import Bootstrap from "$lib/svg/Bootstrap.svelte";
 import Deno from "$lib/svg/Deno.svelte";
 import Docker from "$lib/svg/Docker.svelte";
+import Email from "$lib/svg/Email.svelte";
 import GCP from "$lib/svg/GoogleCloud.svelte";
+import GitHub from "$lib/svg/GitHub.svelte";
 import GSAP from "$lib/svg/GSAP.svelte";
 import Jekyll from "$lib/svg/Jekyll.svelte";
 import Kubernetes from "$lib/svg/Kubernetes.svelte";
+import LinkedIn from "$lib/svg/LinkedIn.svelte";
 import Postgres from "$lib/svg/PostgreSQL.svelte";
 import Sass from "$lib/svg/Sass.svelte";
 import Supabase from "$lib/svg/Supabase.svelte";
 import Svelte from "$lib/svg/Svelte.svelte";
 import TailwindCSS from "$lib/svg/TailwindCSS.svelte";
+import Upwork from "$lib/svg/Upwork.svelte";
 
 /* Types */
+interface Contact {
+	name: string;
+	link: string;
+	logo: Component;
+}
+
 interface Dev {
 	[key: string]: DevItem;
 }
@@ -33,6 +43,13 @@ interface Project {
 }
 
 /* Helpers */
+export const contacts = [
+	{ name: "Email", link: "mailto:davykamanzi@live.com", logo: Email },
+	{ name: "GitHub", link: "https://github.com/DavyK17", logo: GitHub },
+	{ name: "LinkedIn", link: "https://linkedin.com/in/davykamanzi", logo: LinkedIn },
+	{ name: "Upwork", link: "https://www.upwork.com/freelancers/~01f8763fa758afea25", logo: Upwork }
+] as Contact[];
+
 export const dev: Dev = {
 	aws: { name: "Amazon Web Services", logo: AWS },
 	bootstrap: { name: "Bootstrap", logo: Bootstrap },
