@@ -18,11 +18,11 @@
 
 <div class="container">
 	<Nav />
-	<main>
+	<main class="max-w-3xl px-4 py-2">
 		{#if page.url.pathname !== "/"}
 			<h1 class="sr-only">Davy Kamanzi - Web Developer</h1>
 		{/if}
-		<div class="mobile-filler"></div>
+		<div class="h-[75px] md:hidden"></div>
 		{@render children()}
 	</main>
 	<Footer />
