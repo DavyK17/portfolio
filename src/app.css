@@ -144,4 +144,12 @@
 			}
 		}
 	}
+
+	/* Contacts */
+	.contact-icons {
+		@apply flex items-center max-md:justify-center;
+		svg {
+			@apply mx-2 h-12 transition-opacity duration-150 ease-in-out hover:opacity-80;
+		}
+	}
 }
