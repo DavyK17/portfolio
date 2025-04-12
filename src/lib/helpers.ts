@@ -79,7 +79,7 @@ export const projects: Project[] = [
 		title: "Koloseum: Public Authentication",
 		desc: [
 			"Koloseum is a Kenyan esports platform currently in active development that connects players, gaming lounges, and esports fans. Its public authentication microservice allows users to log in or create a new account.",
-			"I am also overseeing the development of the rest of the platform using the listed frameworks and systems."
+			"I am also overseeing the development of the rest of the platform using the same listed frameworks and systems."
 		],
 		site: "https://auth.koloseum.ke/",
 		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.tailwindcss, dev.deno, dev.docker, dev.kubernetes, dev.gcp]
