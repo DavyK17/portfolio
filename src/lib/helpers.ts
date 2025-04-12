@@ -1,6 +1,5 @@
 import type { Component } from "svelte";
 
-import AWS from "$lib/svg/AWS.svelte";
 import Bootstrap from "$lib/svg/Bootstrap.svelte";
 import Deno from "$lib/svg/Deno.svelte";
 import Docker from "$lib/svg/Docker.svelte";
@@ -51,7 +50,6 @@ export const contacts = [
 ] as Contact[];
 
 export const dev: Dev = {
-	aws: { name: "Amazon Web Services", logo: AWS },
 	bootstrap: { name: "Bootstrap", logo: Bootstrap },
 	deno: { name: "Deno", logo: Deno },
 	docker: { name: "Docker", logo: Docker },
