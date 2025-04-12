@@ -6,6 +6,7 @@ import Deno from "$lib/svg/Deno.svelte";
 import GCP from "$lib/svg/GoogleCloud.svelte";
 import GSAP from "$lib/svg/GSAP.svelte";
 import Jekyll from "$lib/svg/Jekyll.svelte";
+import Kubernetes from "$lib/svg/Kubernetes.svelte";
 import Postgres from "$lib/svg/PostgreSQL.svelte";
 import Sass from "$lib/svg/Sass.svelte";
 import Supabase from "$lib/svg/Supabase.svelte";
@@ -38,6 +39,7 @@ export const dev: Dev = {
 	gcp: { name: "Google Cloud Platform", logo: GCP },
 	gsap: { name: "GSAP", logo: GSAP },
 	jekyll: { name: "Jekyll", logo: Jekyll },
+	kubernetes: { name: "Kubernetes", logo: Kubernetes },
 	postgres: { name: "PostgreSQL", logo: Postgres },
 	sass: { name: "Sass", logo: Sass },
 	supabase: { name: "Supabase", logo: Supabase },
@@ -57,10 +59,10 @@ export const projects: Project[] = [
 	{
 		title: "Koloseum: Public Authentication",
 		desc: [
-			"Koloseum is an online esports platform currently in active development that connects players, gaming lounges, and esports fans. I am overseeing the development of all the platform's microservices starting with this one, which allows users to create a new account or log into their existing account.",
-			"All of the platform's microservices are to be built using the listed frameworks and systems."
+			"Koloseum is a Kenyan esports platform currently in active development that connects players, gaming lounges, and esports fans. Its public authentication microservice allows users to log in or create a new account.",
+			"I am also overseeing the development of the rest of the platform using the listed frameworks and systems."
 		],
 		site: "https://auth.koloseum.ke/",
-		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.tailwindcss, dev.deno]
+		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.tailwindcss, dev.deno, dev.kubernetes, dev.gcp]
 	}
 ];
