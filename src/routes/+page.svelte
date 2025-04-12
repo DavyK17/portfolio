@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Bio from "$lib/img/bio.webp";
-	import { Helpers } from "$lib/helpers";
+	import { dev } from "$lib/helpers";
 
-	const frameworks = Object.values(Helpers.dev)
+	const frameworks = Object.values(dev)
 		.map(({ name }) => name)
 		.join(", ");
 </script>
