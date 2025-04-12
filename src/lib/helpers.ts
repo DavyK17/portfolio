@@ -15,6 +15,7 @@ import Sass from "$lib/svg/Sass.svelte";
 import Supabase from "$lib/svg/Supabase.svelte";
 import Svelte from "$lib/svg/Svelte.svelte";
 import TailwindCSS from "$lib/svg/TailwindCSS.svelte";
+import TypeScript from "$lib/svg/TypeScript.svelte";
 import Upwork from "$lib/svg/Upwork.svelte";
 
 /* Types */
@@ -61,7 +62,8 @@ export const dev: Dev = {
 	sass: { name: "Sass", logo: Sass },
 	supabase: { name: "Supabase", logo: Supabase },
 	sveltekit: { name: "SvelteKit", logo: Svelte },
-	tailwindcss: { name: "Tailwind CSS", logo: TailwindCSS }
+	tailwindcss: { name: "Tailwind CSS", logo: TailwindCSS },
+	typescript: { name: "TypeScript", logo: TypeScript }
 };
 
 export const projects: Project[] = [
@@ -80,6 +82,16 @@ export const projects: Project[] = [
 			"I am also overseeing the development of the rest of the platform using the same listed frameworks and systems."
 		],
 		site: "https://auth.koloseum.ke/",
-		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.tailwindcss, dev.deno, dev.docker, dev.kubernetes, dev.gcp]
+		skills: [
+			dev.sveltekit,
+			dev.supabase,
+			dev.postgres,
+			dev.typescript,
+			dev.tailwindcss,
+			dev.deno,
+			dev.docker,
+			dev.kubernetes,
+			dev.gcp
+		]
 	}
 ];
