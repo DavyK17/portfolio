@@ -18,7 +18,7 @@
 		grid-template-areas: "nav" "top" "projects" "contact" "footer";
 	}
 
-	#root {
+	.container {
 		@apply absolute top-0 right-0 bottom-0 left-0 grid;
 		grid-template: 1fr auto / auto 1fr;
 		grid-template-areas: "nav body" "footer footer";

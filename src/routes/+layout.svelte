@@ -1,5 +1,6 @@
 <script lang="ts">
 	import "../app.css";
+	import { page } from "$app/state";
 
 	import Nav from "$lib/components/Nav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
@@ -15,10 +16,12 @@
 	/>
 </svelte:head>
 
-<div id="root">
+<div class="container">
 	<Nav />
 	<main>
-		<h1 class="sr-only">Davy Kamanzi - Web Developer</h1>
+		{#if page.url.pathname !== "/"}
+			<h1 class="sr-only">Davy Kamanzi - Web Developer</h1>
+		{/if}
 		<div class="mobile-filler"></div>
 		{@render children()}
 	</main>
