@@ -65,6 +65,10 @@
 		@apply text-[#808080] no-underline transition-colors duration-200 ease-in-out hover:focus:text-(--blue);
 	}
 
+	p {
+		@apply mb-4;
+	}
+
 	/* Layout */
 	nav {
 		@apply fixed flex h-[75px] w-full border-solid border-gray-500 bg-black transition-all duration-200 max-md:items-center max-md:border-b-2 md:static md:block md:h-full md:w-16 md:border-r-2;
