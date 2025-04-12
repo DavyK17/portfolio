@@ -129,7 +129,6 @@
 									overflow="visible"
 									width="711"
 									height="270"
-									xlink:href="BFF79FDAE99D0744.jpg"
 									transform="matrix(1 0 0 1 56 132)"
 									id="image11"
 								>
@@ -400,7 +399,6 @@
 									overflow="visible"
 									width="711"
 									height="270"
-									xlink:href="BFF79FDAE99D0745.jpg"
 									transform="matrix(1 0 0 1 56 132)"
 									id="image49"
 								>
