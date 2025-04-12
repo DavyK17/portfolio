@@ -5,12 +5,12 @@
 </script>
 
 <h2 class="uppercase">Projects</h2>
-{#each projects as { title, desc, repo, site, skills }}
+{#each projects as { title, desc, repo, site, skills } (title)}
 	<div class="project">
 		<div class="desc">
 			<h3>{title}</h3>
 			<div>
-				{#each desc as paragraph}
+				{#each desc as paragraph (paragraph)}
 					<p>{paragraph}</p>
 				{/each}
 			</div>
@@ -25,7 +25,7 @@
 			{/if}
 		</div>
 		<div class="skills">
-			{#each skills as { name, logo }}
+			{#each skills as { name, logo } (name)}
 				<svelte:component this={logo} aria-label={name} />
 			{/each}
 		</div>
