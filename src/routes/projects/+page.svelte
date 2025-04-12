@@ -15,7 +15,7 @@
 				{/each}
 			</div>
 			{#if site && repo}
-				<div class="project-links">
+				<div>
 					<a href={site} target="_blank" rel="noreferrer">{linkLabels[0]}</a>
 					<span class="bullet"></span>
 					<a href={repo} target="_blank" rel="noreferrer">{linkLabels[1]}</a>
