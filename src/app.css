@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-	--font-roboto: "Roboto Condensed", "sans-serif";
+	--font-roboto: "Roboto Condensed", sans-serif;
 	--font-rokkitt: "Rokkitt", serif;
 	--blue: #0066c8;
 	--green: #ceff00;
