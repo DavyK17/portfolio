@@ -137,10 +137,10 @@
 			opacity: 0.75;
 		}
 		.skills {
-			@apply flex flex-wrap items-center justify-center max-md:my-6;
+			@apply my-4 flex flex-wrap items-center justify-center;
 			grid-area: skills;
 			svg {
-				@apply h-auto max-md:m-2 max-md:max-h-[75px] md:mx-2 md:h-12;
+				@apply m-2 h-auto max-md:max-h-[75px] md:h-12;
 			}
 		}
 	}

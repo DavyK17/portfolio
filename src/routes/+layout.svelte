@@ -18,7 +18,7 @@
 
 <div class="container">
 	<Nav />
-	<main class="max-w-3xl px-4 py-2">
+	<main class="px-4 py-2 md:max-w-3xl">
 		{#if page.url.pathname !== "/"}
 			<h1 class="sr-only">Davy Kamanzi - Web Developer</h1>
 		{/if}
