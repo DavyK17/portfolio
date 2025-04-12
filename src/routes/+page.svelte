@@ -1,5 +1,10 @@
 <script lang="ts">
 	import Bio from "$lib/img/bio.webp";
+	import { Helpers } from "$lib/helpers";
+
+	const frameworks = Object.values(Helpers.dev)
+		.map(({ name }) => name)
+		.join(", ");
 </script>
 
 <h1 class="uppercase">Davy Kamanzi</h1>
@@ -14,7 +19,7 @@
 		</p>
 		<ul class="my-2 list-none p-0">
 			<li><strong>Languages:</strong> HTML, CSS, JavaScript, Liquid, SQL</li>
-			<li><strong>Frameworks/Systems:</strong></li>
+			<li><strong>Frameworks/systems:</strong> {frameworks}</li>
 		</ul>
 	</div>
 </div>
