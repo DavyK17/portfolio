@@ -6,7 +6,7 @@
 	let nav: HTMLElement;
 	let slidingMenu: HTMLDivElement;
 
-	const isActive = (slug: string = ""): boolean => page.url.pathname.startsWith(`/${slug}`);
+	const isActive = (slug = ""): boolean => (slug === "" ? page.url.pathname === "/" : page.url.pathname.startsWith(`/${slug}`));
 	const toggleMenu = () => {
 		nav.classList.toggle("nav-open");
 		slidingMenu.classList.toggle("menu-open");
