@@ -3,6 +3,7 @@ import type { Component } from "svelte";
 import AWS from "$lib/svg/AWS.svelte";
 import Bootstrap from "$lib/svg/Bootstrap.svelte";
 import Deno from "$lib/svg/Deno.svelte";
+import Docker from "$lib/svg/Docker.svelte";
 import GCP from "$lib/svg/GoogleCloud.svelte";
 import GSAP from "$lib/svg/GSAP.svelte";
 import Jekyll from "$lib/svg/Jekyll.svelte";
@@ -36,6 +37,7 @@ export const dev: Dev = {
 	aws: { name: "Amazon Web Services", logo: AWS },
 	bootstrap: { name: "Bootstrap", logo: Bootstrap },
 	deno: { name: "Deno", logo: Deno },
+	docker: { name: "Docker", logo: Docker },
 	gcp: { name: "Google Cloud Platform", logo: GCP },
 	gsap: { name: "GSAP", logo: GSAP },
 	jekyll: { name: "Jekyll", logo: Jekyll },
@@ -63,6 +65,6 @@ export const projects: Project[] = [
 			"I am also overseeing the development of the rest of the platform using the listed frameworks and systems."
 		],
 		site: "https://auth.koloseum.ke/",
-		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.tailwindcss, dev.deno, dev.kubernetes, dev.gcp]
+		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.tailwindcss, dev.deno, dev.docker, dev.kubernetes, dev.gcp]
 	}
 ];
