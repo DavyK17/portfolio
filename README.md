@@ -4,8 +4,8 @@ This is a challenge project I did as part of my full stack engineer course on [C
 
 ## Links
 
-- Repository: [github.com/DavyK17/davyk17.github.io](https://github.com/DavyK17/davyk17.github.io)
-- Live link: [davyk17.github.io](https://davyk17.github.io)
+- Repository: [github.com/DavyK17/portfolio](https://github.com/DavyK17/portfolio)
+- Live link: [davyk17.pages.dev](https://davyk17.pages.dev)
 
 ## How it was built
 
@@ -24,7 +24,7 @@ This is a challenge project I did as part of my full stack engineer course on [C
 Clone the repository and navigate to the project directory.
 
 ```bash
-gh repo clone DavyK17/davyk17.github.io portfolio
+gh repo clone DavyK17/portfolio
 cd portfolio
 ```
 
