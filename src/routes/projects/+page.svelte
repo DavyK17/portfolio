@@ -11,7 +11,7 @@
 			<h3>{title}</h3>
 			<div>
 				{#each desc as paragraph (paragraph)}
-					<p>{paragraph}</p>
+					<p>{@html paragraph}</p>
 				{/each}
 			</div>
 			{#if site && repo}
