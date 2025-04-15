@@ -76,6 +76,15 @@ export const projects: Project[] = [
 		skills: [dev.jekyll, dev.sass, dev.gsap]
 	},
 	{
+		title: "Man of Substance",
+		desc: [
+			"<em>Man of Substance</em> is my debut studio album as a musician, under my pseudonym DVK. Its website allows users to view information about the album, including synopses, lyrics, and credits for each track. Crowdfunding contributors are also able to claim their rewards on the app."
+		],
+		site: "https://manofsubstance.pages.dev/",
+		repo: "https://github.com/DavyK17/man-of-substance",
+		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.typescript, dev.sass]
+	},
+	{
 		title: "Koloseum: Public Authentication",
 		desc: [
 			"Koloseum is a Kenyan esports platform currently in active development that connects players, gaming lounges, and esports fans. Its public authentication microservice allows users to log in or create a new account.",
