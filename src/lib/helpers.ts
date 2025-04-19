@@ -2,6 +2,7 @@ import type { Component } from "svelte";
 
 import Bootstrap from "$lib/svg/Bootstrap.svelte";
 import CloudflareWorkers from "./svg/CloudflareWorkers.svelte";
+import DaisyUI from "./svg/DaisyUI.svelte";
 import Deno from "$lib/svg/Deno.svelte";
 import Docker from "$lib/svg/Docker.svelte";
 import Email from "$lib/svg/Email.svelte";
@@ -54,6 +55,7 @@ export const contacts = [
 export const dev: Dev = {
 	bootstrap: { name: "Bootstrap", logo: Bootstrap },
 	cloudflareWorkers: { name: "Cloudflare Workers", logo: CloudflareWorkers },
+	daisyui: { name: "DaisyUI", logo: DaisyUI },
 	deno: { name: "Deno", logo: Deno },
 	docker: { name: "Docker", logo: Docker },
 	gcp: { name: "Google Cloud Platform", logo: GCP },
@@ -99,6 +101,7 @@ export const projects: Project[] = [
 			dev.postgres,
 			dev.typescript,
 			dev.tailwindcss,
+			dev.daisyui,
 			dev.deno,
 			dev.docker,
 			dev.kubernetes,
