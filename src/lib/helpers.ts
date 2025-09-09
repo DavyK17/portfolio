@@ -4,9 +4,9 @@ import Bootstrap from "$lib/svg/Bootstrap.svelte";
 import CloudflareWorkers from "./svg/CloudflareWorkers.svelte";
 import DaisyUI from "./svg/DaisyUI.svelte";
 import Deno from "$lib/svg/Deno.svelte";
+import DigitalOcean from "$lib/svg/DigitalOcean.svelte";
 import Docker from "$lib/svg/Docker.svelte";
 import Email from "$lib/svg/Email.svelte";
-import GCP from "$lib/svg/GoogleCloud.svelte";
 import GitHub from "$lib/svg/GitHub.svelte";
 import GSAP from "$lib/svg/GSAP.svelte";
 import Jekyll from "$lib/svg/Jekyll.svelte";
@@ -57,8 +57,8 @@ export const dev: Dev = {
 	cloudflareWorkers: { name: "Cloudflare Workers", logo: CloudflareWorkers },
 	daisyui: { name: "DaisyUI", logo: DaisyUI },
 	deno: { name: "Deno", logo: Deno },
+	digitalocean: { name: "DigitalOcean", logo: DigitalOcean },
 	docker: { name: "Docker", logo: Docker },
-	gcp: { name: "Google Cloud Platform", logo: GCP },
 	gsap: { name: "GSAP", logo: GSAP },
 	jekyll: { name: "Jekyll", logo: Jekyll },
 	kubernetes: { name: "Kubernetes", logo: Kubernetes },
@@ -105,7 +105,7 @@ export const projects: Project[] = [
 			dev.deno,
 			dev.docker,
 			dev.kubernetes,
-			dev.gcp
+			dev.digitalocean
 		]
 	}
 ];
