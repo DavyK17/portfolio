@@ -53,28 +53,28 @@ export const contacts = [
 ] as Contact[];
 
 export const dev: Dev = {
-	bootstrap: { name: "Bootstrap", logo: Bootstrap },
-	cloudflareWorkers: { name: "Cloudflare Workers", logo: CloudflareWorkers },
-	daisyui: { name: "DaisyUI", logo: DaisyUI },
-	deno: { name: "Deno", logo: Deno },
-	digitalocean: { name: "DigitalOcean", logo: DigitalOcean },
-	docker: { name: "Docker", logo: Docker },
-	gsap: { name: "GSAP", logo: GSAP },
-	jekyll: { name: "Jekyll", logo: Jekyll },
-	kubernetes: { name: "Kubernetes", logo: Kubernetes },
-	postgres: { name: "PostgreSQL", logo: Postgres },
-	sass: { name: "Sass", logo: Sass },
-	supabase: { name: "Supabase", logo: Supabase },
 	sveltekit: { name: "SvelteKit", logo: Svelte },
+	supabase: { name: "Supabase", logo: Supabase },
+	postgres: { name: "PostgreSQL", logo: Postgres },
+	typescript: { name: "TypeScript", logo: TypeScript },
+	docker: { name: "Docker", logo: Docker },
+	kubernetes: { name: "Kubernetes", logo: Kubernetes },
+	digitalocean: { name: "DigitalOcean", logo: DigitalOcean },
 	tailwindcss: { name: "Tailwind CSS", logo: TailwindCSS },
-	typescript: { name: "TypeScript", logo: TypeScript }
+	daisyui: { name: "DaisyUI", logo: DaisyUI },
+	cloudflareWorkers: { name: "Cloudflare Workers", logo: CloudflareWorkers },
+	deno: { name: "Deno", logo: Deno },
+	jekyll: { name: "Jekyll", logo: Jekyll },
+	sass: { name: "Sass", logo: Sass },
+	gsap: { name: "GSAP", logo: GSAP },
+	bootstrap: { name: "Bootstrap", logo: Bootstrap }
 };
 
 export const projects: Project[] = [
 	{
 		title: "Arkad World",
 		desc: [
-			"Arkad World Ltd is a Kenyan company specialising in conference interpreting, translation and conference management services. I was tasked with overhauling the company's website by removing Wordpress and building a simple, new design."
+			"Arkad World Ltd is a Kenyan conference interpreting, translation and conference management company. I migrated the marketing site from WordPress to Jekyll in 2022 and have maintained it since — 118 commits and 26 pull requests, with Cloudflare Pages deploying staging and production from git. The live footer credits the work by name."
 		],
 		site: "https://arkadworld.com/",
 		skills: [dev.jekyll, dev.sass, dev.gsap]
@@ -82,19 +82,19 @@ export const projects: Project[] = [
 	{
 		title: "Man of Substance",
 		desc: [
-			"<em>Man of Substance</em> is my debut studio album as a musician, under my pseudonym DVK. Its website allows users to view information about the album, including synopses, lyrics, and credits for each track. Crowdfunding contributors are also able to claim their rewards on the app."
+			"SvelteKit and Supabase application for a crowdfunded album: public catalogue (synopses, lyrics, credits) and contributor rewards under PostgreSQL row-level security, tier entitlements computed in SQL, and one-hour signed URLs for private file delivery. Public repository — the readable sample of the stack used on Koloseum."
 		],
 		site: "https://manofsubstance.pages.dev/",
 		repo: "https://github.com/DavyK17/man-of-substance",
 		skills: [dev.sveltekit, dev.supabase, dev.postgres, dev.typescript, dev.sass, dev.cloudflareWorkers]
 	},
 	{
-		title: "Koloseum: Public Authentication",
+		title: "Koloseum",
 		desc: [
-			"Koloseum is a Kenyan esports platform currently in active development that connects players, gaming lounges, and esports fans. Its public authentication microservice allows users to log in or create a new account.",
-			"I am also overseeing the development of the rest of the platform using the same listed frameworks and systems."
+			"Kenya's competition platform for esports: independently deployable SvelteKit services for Players, Lounges and Backroom on a shared PostgreSQL database with row-level security and 390 PL/pgSQL functions. I designed and built the completed MVP services (authentication, sessions, lounge account/operations/staff).",
+			"Public Authentication ran in production from March to October 2025: 51 of 80 external sign-ups completed an age-gated Player registration with Smile ID. Application source is private; architecture, ADRs and screenshots are in the engineering showcase."
 		],
-		site: "https://auth.koloseum.ke/",
+		repo: "https://github.com/koloseum-technologies/engineering-showcase",
 		skills: [
 			dev.sveltekit,
 			dev.supabase,

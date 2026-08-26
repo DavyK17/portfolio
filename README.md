@@ -1,41 +1,32 @@
-# Portfolio website
+# Davy Kamanzi — portfolio
 
-This is a challenge project I did as part of my full stack engineer course on [Codecademy](https://codecademy.com). Initially built with React and now using SvelteKit, the website provides a list of projects I've done as a web developer.
+Personal site for selected engineering work. SvelteKit 2, Svelte 5, TypeScript, Tailwind 4, deployed from `main` by Cloudflare Pages.
+
+This repository started as a Codecademy exercise and has been rewritten since; it is no longer course work.
 
 ## Links
 
+- Live: [davyk17.pages.dev](https://davyk17.pages.dev)
+- CV: [davyk17.pages.dev/Davy-Kamanzi-CV.md](https://davyk17.pages.dev/Davy-Kamanzi-CV.md)
+- Engineering showcase: [koloseum-technologies/engineering-showcase](https://github.com/koloseum-technologies/engineering-showcase)
 - Repository: [github.com/DavyK17/portfolio](https://github.com/DavyK17/portfolio)
-- Live link: [davyk17.pages.dev](https://davyk17.pages.dev)
 
 ## How it was built
 
-- [SvelteKit](https://kit.svelte.dev/) - Full-stack web application framework
-- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript programming language
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [SvelteKit](https://kit.svelte.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Cloudflare Pages (git integration on `main`; `npm run deploy` is a manual Wrangler override into the same project)
 
 ## Setup
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) - JavaScript runtime
-
-### Running the project
-
-Clone the repository and navigate to the project directory.
 
 ```bash
 gh repo clone DavyK17/portfolio
 cd portfolio
-```
-
-Install the project's dependencies and fix any vulnerabilities.
-
-```bash
-npm install && npm audit fix
-```
-
-Run the project.
-
-```bash
+npm ci
 npm run dev
 ```
+
+Node 22+. A `.nvmrc` pins the version so Cloudflare's build container matches local.
+
+`npm run deploy` builds locally and pushes the output with Wrangler. Prefer merging to `main` so the git pipeline is the source of truth.

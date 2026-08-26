@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davyk17.pages.dev/sitemap.xml

@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { projects } from "$lib/helpers";
-
-	const linkLabels = ["Visit website", "View repository"];
 </script>
 
 <h2 class="uppercase">Projects</h2>
@@ -11,22 +9,23 @@
 			<h3>{title}</h3>
 			<div>
 				{#each desc as paragraph (paragraph)}
-					<p>{@html paragraph}</p>
+					<p>{paragraph}</p>
 				{/each}
 			</div>
 			{#if site && repo}
 				<div>
-					<a href={site} target="_blank" rel="noreferrer">{linkLabels[0]}</a>
+					<a href={site} target="_blank" rel="noreferrer">Visit website</a>
 					<span class="bullet"></span>
-					<a href={repo} target="_blank" rel="noreferrer">{linkLabels[1]}</a>
+					<a href={repo} target="_blank" rel="noreferrer">View repository</a>
 				</div>
 			{:else}
-				<a href={site || repo} target="_blank" rel="noreferrer">{site ? linkLabels[0] : linkLabels[1]}</a>
+				<a href={site || repo} target="_blank" rel="noreferrer">{site ? "Visit website" : "View repository"}</a>
 			{/if}
 		</div>
 		<div class="skills">
 			{#each skills as { name, logo } (name)}
-				<svelte:component this={logo} aria-label={name} />
+				{@const Logo = logo}
+				<Logo aria-label={name} />
 			{/each}
 		</div>
 	</div>
