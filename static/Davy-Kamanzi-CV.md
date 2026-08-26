@@ -5,7 +5,7 @@
 Nairobi, Kenya · Open to remote international opportunities  
 +254 799 933 229 · davykamanzi@live.com  
 GitHub: [github.com/DavyK17](https://github.com/DavyK17) · Portfolio: [davyk17.pages.dev](https://davyk17.pages.dev) · LinkedIn: [linkedin.com/in/davykamanzi](https://www.linkedin.com/in/davykamanzi)  
-Engineering showcase: [github.com/koloseum-technologies/engineering-showcase](https://github.com/koloseum-technologies/engineering-showcase)
+Engineering showcase: [github.com/koloseum-technologies/engineering-showcase](https://github.com/koloseum-technologies/engineering-showcase) · npm: [npmjs.com/org/koloseum](https://www.npmjs.com/org/koloseum) · CV (PDF): [davyk17.pages.dev/Davy-Kamanzi-CV.pdf](https://davyk17.pages.dev/Davy-Kamanzi-CV.pdf)
 
 ---
 
@@ -40,7 +40,6 @@ Experienced across system architecture, domain and database modelling, authentic
 ## PROFESSIONAL EXPERIENCE
 
 ### ACE PRO SPORTS TECHNOLOGIES
-
 **Head of Technology & Community Relations | Director-Shareholder**  
 October 2021 – Present · Nairobi, Kenya
 
@@ -53,7 +52,6 @@ Sports and esports technology organisation focused on digital transformation, at
 - Combine software engineering with domain expertise from esports competition operations, community management and live-event technology.
 
 ### KOLOSEUM
-
 **Lead Full-Stack Engineer / Product Engineer**  
 2024 – Present
 
@@ -77,7 +75,6 @@ Multi-service esports competition platform developed for Ace Pro Sports Technolo
 **Public evidence:** [engineering showcase](https://github.com/koloseum-technologies/engineering-showcase) · [npm organisation](https://www.npmjs.com/org/koloseum) · readable stack sample: [man-of-substance](https://github.com/DavyK17/man-of-substance)
 
 ### FREELANCE SOFTWARE DEVELOPER
-
 **July 2022 – Present**
 
 Independent web developer delivering and maintaining sites for clients in Kenya, with a documented branch-to-staging-to-production workflow and Cloudflare Pages continuous deployment (per-pull-request preview environments and deploy checks on GitHub).
@@ -88,7 +85,6 @@ Independent web developer delivering and maintaining sites for clients in Kenya,
 **Selected technologies:** JavaScript, TypeScript, Jekyll, Sass, GSAP, Cloudflare Pages, HTML5, CSS3
 
 ### TEKKEN 254
-
 **Founder | Web Developer | Community Organiser**  
 August 2017 – October 2021
 
@@ -104,7 +100,6 @@ Founded and developed a Kenyan competitive Tekken community and esports brand.
 ## SELECTED ENGINEERING PROJECT
 
 ### KOLOSEUM
-
 **Full-Stack Esports Competition Platform**
 
 Koloseum is a competition platform for esports in Kenya. Players discover, enter and follow structured competitions; organisers run Leagues, Challenges and Locals; Lounges get infrastructure for live events and branch operations.
@@ -152,3 +147,5 @@ Koloseum is a competition platform for esports in Kenya. Players discover, enter
 **Product & Systems:** Requirements analysis, domain modelling, system architecture, technical specification, stakeholder communication, product development
 
 **Community & Operations:** Esports community development, tournament operations, live-event technology, stakeholder relations
+
+---

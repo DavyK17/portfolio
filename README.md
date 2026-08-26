@@ -7,7 +7,7 @@ This repository started as a Codecademy exercise and has been rewritten since; i
 ## Links
 
 - Live: [davyk17.pages.dev](https://davyk17.pages.dev)
-- CV: [davyk17.pages.dev/Davy-Kamanzi-CV.md](https://davyk17.pages.dev/Davy-Kamanzi-CV.md)
+- CV: [davyk17.pages.dev/Davy-Kamanzi-CV.pdf](https://davyk17.pages.dev/Davy-Kamanzi-CV.pdf)
 - Engineering showcase: [koloseum-technologies/engineering-showcase](https://github.com/koloseum-technologies/engineering-showcase)
 - Repository: [github.com/DavyK17/portfolio](https://github.com/DavyK17/portfolio)
 

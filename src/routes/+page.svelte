@@ -23,7 +23,7 @@
 	<li><strong>Frameworks/systems:</strong> {frameworks}</li>
 	<li>
 		<strong>Elsewhere:</strong>
-		<a href="/Davy-Kamanzi-CV.md">CV</a> ·
+		<a href="/Davy-Kamanzi-CV.pdf">CV</a> ·
 		<a href="https://github.com/koloseum-technologies/engineering-showcase">Engineering showcase</a> ·
 		<a href="https://github.com/koloseum-technologies">Koloseum</a>
 	</li>
