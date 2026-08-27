@@ -55,26 +55,26 @@ export const contacts = [
 export const dev: Dev = {
 	sveltekit: { name: "SvelteKit", logo: Svelte },
 	supabase: { name: "Supabase", logo: Supabase },
-	postgres: { name: "PostgreSQL", logo: Postgres },
 	typescript: { name: "TypeScript", logo: TypeScript },
+	postgres: { name: "PostgreSQL", logo: Postgres },
 	docker: { name: "Docker", logo: Docker },
 	kubernetes: { name: "Kubernetes", logo: Kubernetes },
 	digitalocean: { name: "DigitalOcean", logo: DigitalOcean },
 	tailwindcss: { name: "Tailwind CSS", logo: TailwindCSS },
 	daisyui: { name: "DaisyUI", logo: DaisyUI },
-	cloudflareWorkers: { name: "Cloudflare Workers", logo: CloudflareWorkers },
 	deno: { name: "Deno", logo: Deno },
+	cloudflareWorkers: { name: "Cloudflare Workers", logo: CloudflareWorkers },
 	jekyll: { name: "Jekyll", logo: Jekyll },
 	sass: { name: "Sass", logo: Sass },
-	gsap: { name: "GSAP", logo: GSAP },
-	bootstrap: { name: "Bootstrap", logo: Bootstrap }
+	bootstrap: { name: "Bootstrap", logo: Bootstrap },
+	gsap: { name: "GSAP", logo: GSAP }
 };
 
 export const projects: Project[] = [
 	{
 		title: "Arkad World",
 		desc: [
-			"Arkad World Ltd is a Kenyan conference interpreting, translation and conference management company. I migrated the marketing site from WordPress to Jekyll in 2022 and have maintained it since — 118 commits and 26 pull requests, with Cloudflare Pages deploying staging and production from git. The live footer credits the work by name."
+			"Arkad World Ltd is a Kenyan conference interpreting, translation, and conference management company. I migrated their site from WordPress to Jekyll and have also continued to maintain it since."
 		],
 		site: "https://arkadworld.com/",
 		skills: [dev.jekyll, dev.sass, dev.gsap]
@@ -82,7 +82,7 @@ export const projects: Project[] = [
 	{
 		title: "Man of Substance",
 		desc: [
-			"SvelteKit and Supabase application for a crowdfunded album: public catalogue (synopses, lyrics, credits) and contributor rewards under PostgreSQL row-level security, tier entitlements computed in SQL, and one-hour signed URLs for private file delivery. Public repository — the readable sample of the stack used on Koloseum."
+			"<em>Man of Substance</em> is my debut music album under my pseudonym DVK. Its website is a SvelteKit/Supabase app that allows users to view the album credits and browse the tracklist (synopses, lyrics, credits), while crowdfunding contributors can also claim rewards. Reward tiers are computed in SQL and signed URLs are used for file delivery."
 		],
 		site: "https://manofsubstance.pages.dev/",
 		repo: "https://github.com/DavyK17/man-of-substance",
@@ -91,8 +91,8 @@ export const projects: Project[] = [
 	{
 		title: "Koloseum",
 		desc: [
-			"Kenya's competition platform for esports: independently deployable SvelteKit services for Players, Lounges and Backroom on a shared PostgreSQL database with row-level security and 390 PL/pgSQL functions. I designed and built the completed MVP services (authentication, sessions, lounge account/operations/staff).",
-			"Public Authentication ran in production from March to October 2025: 51 of 80 external sign-ups completed an age-gated Player registration with Smile ID. Application source is private; architecture, ADRs and screenshots are in the engineering showcase."
+			"Koloseum is Kenya's competition platform for esports. It consists of independently deployable SvelteKit microservices for Players, Lounges, and Backroom, all on a shared PostgreSQL database. I am currently designing and building the MVP in accordance with our internal specifications.",
+			"Public Authentication was available to the public from March to December 2025. 51 of 80 external (non-Koloseum staff) sign-ups completed the age-gated Player registration with ID verification."
 		],
 		repo: "https://github.com/koloseum-technologies/engineering-showcase",
 		skills: [

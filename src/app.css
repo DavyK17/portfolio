@@ -123,6 +123,14 @@
 		grid-area: footer;
 	}
 
+	.horizontal-list {
+		@apply inline-flex list-none p-0 *:not-first:before:mx-1 *:not-first:before:opacity-75 *:not-first:before:content-['•'];
+	}
+
+	.cv-button {
+		@apply inline-block rounded-md bg-black px-4 py-2 text-white shadow-md transition-all duration-150 hover:text-[var(--green)];
+	}
+
 	/* Projects */
 	.project {
 		@apply mb-6 grid;

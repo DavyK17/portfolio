@@ -8,14 +8,10 @@
 	let { children } = $props();
 
 	const title = $derived(
-		page.url.pathname === "/projects"
-			? "Projects — Davy Kamanzi"
-			: page.url.pathname === "/contact"
-				? "Contact — Davy Kamanzi"
-				: "Davy Kamanzi — Full-stack engineer"
+		`${page.url.pathname === "/projects" ? "Projects" : page.url.pathname === "/contact" ? "Contact" : "Home"} | Davy Kamanzi - Full-stack engineer`
 	);
 	const description =
-		"Full-stack engineer in Nairobi. Koloseum: SvelteKit, PostgreSQL, Supabase. Open to remote mid/senior roles.";
+		"Full-stack engineer based in Nairobi. Currently building Koloseum with SvelteKit, PostgreSQL, and Supabase. Open to remote or hybrid mid/senior roles.";
 	const url = $derived(`https://davyk17.pages.dev${page.url.pathname === "/" ? "" : page.url.pathname}`);
 </script>
 

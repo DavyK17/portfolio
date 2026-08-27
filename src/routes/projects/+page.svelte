@@ -9,7 +9,8 @@
 			<h3>{title}</h3>
 			<div>
 				{#each desc as paragraph (paragraph)}
-					<p>{paragraph}</p>
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					<p>{@html paragraph}</p>
 				{/each}
 			</div>
 			{#if site && repo}
