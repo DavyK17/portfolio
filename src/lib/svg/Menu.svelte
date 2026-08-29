@@ -1,8 +1,13 @@
 <script lang="ts">
-	let props = $props();
-	let parentProps = { ...props, fill: undefined };
+	import type { SVGAttributes } from "svelte/elements";
+
+	type Props = SVGAttributes<SVGSVGElement> & {
+		pathClass?: string;
+	};
+
+	let { class: className, pathClass = "fill-none stroke-current", ...rest }: Props = $props();
 </script>
 
-<svg width="24" height="24" viewBox="0 0 24 24" {...parentProps}>
-	<path fill={props.fill} d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+<svg class={className} viewBox="0 0 24 24" {...rest}>
+	<path class={pathClass} d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
 </svg>
