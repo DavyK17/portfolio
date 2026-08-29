@@ -35,7 +35,10 @@
 	</div>
 	<div id="sliding-menu" bind:this={slidingMenu}>
 		<button class="h-fit w-fit" onclick={toggleMenu}>
-			<Menu class="me-4 h-8 w-auto fill-[#ceff00] transition-all duration-200 ease-in-out hover:fill-gray-300" />
+			<Menu
+				class="me-4 h-8 w-auto"
+				pathClass="fill-[#ceff00] hover:fill-gray-300 transition-all duration-200 ease-in-out"
+			/>
 		</button>
 		{@render menu()}
 	</div>
