@@ -34,7 +34,7 @@
 		{#if page.url.pathname !== "/"}
 			<h1 class="sr-only">{title}</h1>
 		{/if}
-		<div class="h-[75px] md:hidden"></div>
+		<div class="h-18.75 md:hidden"></div>
 		{@render children()}
 	</main>
 	<Footer />
