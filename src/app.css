@@ -71,7 +71,7 @@
 
 	/* Layout */
 	nav {
-		@apply fixed flex h-[75px] w-full border-solid border-gray-500 bg-black transition-all duration-200 max-md:items-center max-md:border-b-2 md:static md:block md:h-full md:w-16 md:border-r-2;
+		@apply fixed flex h-18.75 w-full border-solid border-gray-500 bg-black transition-all duration-200 max-md:items-center max-md:border-b-2 md:static md:block md:h-full md:w-16 md:border-r-2;
 		grid-area: nav;
 		ul li a {
 			@apply text-white transition-colors duration-200 ease-in-out hover:text-gray-300 focus:text-gray-300;
@@ -123,6 +123,14 @@
 		grid-area: footer;
 	}
 
+	.horizontal-list {
+		@apply inline-flex list-none p-0 *:not-first:before:mx-1 *:not-first:before:opacity-75 *:not-first:before:content-['•'];
+	}
+
+	.cv-button {
+		@apply inline-block rounded-md bg-black px-4 py-2 text-white shadow-md transition-all duration-150 hover:text-[--green];
+	}
+
 	/* Projects */
 	.project {
 		@apply mb-6 grid;
@@ -139,7 +147,7 @@
 			@apply my-4 flex flex-wrap items-center justify-center;
 			grid-area: skills;
 			svg {
-				@apply m-2 h-auto max-md:max-h-[75px] md:h-12;
+				@apply m-2 h-auto max-md:max-h-18.75 md:h-12;
 			}
 		}
 	}
