@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { resolve } from "$app/paths";
 	import { page } from "$app/state";
+
 	import Menu from "$lib/svg/Menu.svelte";
 
 	let props = $props();
@@ -16,13 +18,13 @@
 {#snippet menu()}
 	<ul>
 		<li>
-			<a class:active={isActive()} href="/">Home</a>
+			<a class:active={isActive()} href={resolve("/")}>Home</a>
 		</li>
 		<li>
-			<a class:active={isActive("projects")} href="/projects">Projects</a>
+			<a class:active={isActive("projects")} href={resolve("/projects")}>Projects</a>
 		</li>
 		<li>
-			<a class:active={isActive("contact")} href="/contact">Contact</a>
+			<a class:active={isActive("contact")} href={resolve("/contact")}>Contact</a>
 		</li>
 	</ul>
 {/snippet}

@@ -15,12 +15,12 @@
 			</div>
 			{#if site && repo}
 				<div>
-					<a href={site} target="_blank" rel="noreferrer">Visit website</a>
+					<a href={site} target="_blank" rel="external noreferrer">Visit website</a>
 					<span class="bullet"></span>
-					<a href={repo} target="_blank" rel="noreferrer">View repository</a>
+					<a href={repo} target="_blank" rel="external noreferrer">View repository</a>
 				</div>
 			{:else}
-				<a href={site || repo} target="_blank" rel="noreferrer">{site ? "Visit website" : "View repository"}</a>
+				<a href={site || repo} target="_blank" rel="external noreferrer">{site ? "Visit website" : "View repository"}</a>
 			{/if}
 		</div>
 		<div class="skills">
