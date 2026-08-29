@@ -11,7 +11,7 @@
 		`${page.url.pathname === "/projects" ? "Projects" : page.url.pathname === "/contact" ? "Contact" : "Home"} | Davy Kamanzi - Full-stack engineer`
 	);
 	const description =
-		"Full-stack engineer based in Nairobi. Currently building Koloseum with SvelteKit, PostgreSQL, and Supabase. Open to remote or hybrid mid/senior roles.";
+		"Full-stack engineer based in Nairobi, building and shipping web software since 2020. Currently building Koloseum with TypeScript, SvelteKit, PostgreSQL, and Supabase. Open to remote or hybrid mid/senior roles.";
 	const url = $derived(`https://davyk17.pages.dev${page.url.pathname === "/" ? "" : page.url.pathname}`);
 </script>
 

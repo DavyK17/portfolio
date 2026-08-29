@@ -15,12 +15,12 @@
 	<div class="md:px-4">
 		<h2>Full-stack engineer</h2>
 		<p>
-			Currently designing and building <a
+			Building and shipping web software since 2020. Currently designing and building <a
 				href="https://github.com/koloseum-technologies"
 				target="_blank"
 				rel="noopener noreferrer">Koloseum</a
-			>, Kenya's competition platform for esports, using SvelteKit, Supabase, and PostgreSQL. Open to remote or hybrid
-			mid/senior roles.
+			>, Kenya's competition platform for esports, using TypeScript, SvelteKit, PostgreSQL, and Supabase. Open to remote or
+			hybrid mid/senior roles.
 		</p>
 	</div>
 </div>
